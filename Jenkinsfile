@@ -7,7 +7,8 @@ pipeline{
              if(***REMOVED***.BRANCH_NAME=='testci'){
                 sh '''
                 sbt " -DSTAGING=true; reload; clean; compile;  docker:publish"
-                '''
+		ls                
+'''
                 }
             }
          }
@@ -15,8 +16,9 @@ pipeline{
         stage('Staging'){
             steps{
             script{
-                if(***REMOVED***.BRANCH_NAME=='testci'){
+                if(***REMOVED***.BRANCH_NAME=='test'){
                     sh '''
+		    
                     cd kubernetes
                     ./config-map-test.sh
                     kubectl delete -f  ***REMOVED***_datipubblici_test.yaml
