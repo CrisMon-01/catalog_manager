@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="***REMOVED***://ant.apache.org/ivy/extra">
+	<info organisation="it.gov.***REMOVED***"
+		module="***REMOVED***-catalog-manager_2.11"
+		revision="1.0.4-SNAPSHOT"
+		status="integration"
+		publication="20180814173253"
+	>
+		<description>
+		***REMOVED***-catalog-manager
+		</description>
+	</info>
+	<configurations>
+		<conf name="universal" visibility="public" description=""/>
+		<conf name="universal-docs" visibility="public" description=""/>
+		<conf name="universal-src" visibility="public" description=""/>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="windows" visibility="public" description=""/>
+		<conf name="docker" visibility="public" description=""/>
+		<conf name="linux" visibility="public" description=""/>
+		<conf name="rpm" visibility="public" description="" extends="linux"/>
+		<conf name="debian" visibility="public" description="" extends="linux"/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="private" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="***REMOVED***-catalog-manager_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="***REMOVED***-catalog-manager_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="***REMOVED***-catalog-manager_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="***REMOVED***-catalog-manager_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="it.gov.***REMOVED***" name="***REMOVED***-catalog-manager-client_2.11" rev="1.0.4-SNAPSHOT" conf="compile->default(compile)"/>
+		<dependency org="de.zalando" name="api-first-hand-api_2.11" rev="0.2.4-***REMOVED***" conf="compile->default(compile)"/>
+		<dependency org="com.fasterxml.jackson.dataformat" name="jackson-dataformat-yaml" rev="2.4.4" conf="compile->default(compile)"/>
+		<dependency org="com.fasterxml.jackson.module" name="jackson-module-scala_2.11" rev="2.6.1" conf="compile->default(compile)"/>
+		<dependency org="org.scalacheck" name="scalacheck_2.11" rev="1.12.4" conf="test->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-test_2.11" rev="2.5.14" conf="test->default(compile)"/>
+		<dependency org="org.wartremover" name="wartremover_2.11" rev="2.0.3" conf="plugin->default(compile)"/>
+		<dependency org="com.typesafe.play" name="twirl-api_2.11" rev="1.1.1" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-server_2.11" rev="2.5.14" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-omnidoc_2.11" rev="2.5.14" conf="docs->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-netty-server_2.11" rev="2.5.14" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-logback_2.11" rev="2.5.14" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-jdbc_2.11" rev="2.5.14" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-cache_2.11" rev="2.5.14" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-ws_2.11" rev="2.5.14" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="filters-helpers_2.11" rev="2.5.14" conf="compile->default(compile)"/>
+		<dependency org="org.webjars" name="swagger-ui" rev="3.0.7" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.play" name="play-specs2_2.11" rev="2.5.14" conf="test->default(compile)"/>
+		<dependency org="org.scalacheck" name="scalacheck_2.11" rev="1.13.5" conf="test->default(compile)"/>
+		<dependency org="me.jeffmay" name="play-json-tests_2.11" rev="1.5.0" conf="test->default(compile)"/>
+		<dependency org="org.scalatestplus.play" name="scalatestplus-play_2.11" rev="1.5.0" conf="test->default(compile)"/>
+		<dependency org="org.mongodb" name="casbah_2.11" rev="3.1.1" conf="compile->default(compile)"/>
+		<dependency org="net.caoticode.dirwatcher" name="dir-watcher_2.11" rev="0.1.0" conf="compile->default(compile)"/>
+		<dependency org="it.gov.***REMOVED***" name="common_2.11" rev="1.1.0-SNAPSHOT" conf="compile->default(compile)"/>
+		<dependency org="me.lessis" name="base64_2.11" rev="0.2.0" conf="compile->default(compile)"/>
+		<dependency org="ch.lightshed" name="courier_2.11" rev="0.1.4" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.avro4s" name="avro4s-core_2.11" rev="1.1.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.avro4s" name="avro4s-json_2.11" rev="1.1.3" conf="compile->default(compile)"/>
+		<dependency org="com.sksamuel.avro4s" name="avro4s-generator_2.11" rev="1.1.3" conf="compile->default(compile)"/>
+		<dependency org="io.prometheus" name="simpleclient" rev="0.1.0" conf="compile->default(compile)"/>
+		<dependency org="io.prometheus" name="simpleclient_hotspot" rev="0.1.0" conf="compile->default(compile)"/>
+		<dependency org="io.prometheus" name="simpleclient_common" rev="0.1.0" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>

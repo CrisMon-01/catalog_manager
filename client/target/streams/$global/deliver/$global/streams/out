@@ -1,0 +1,4 @@
+[0m[[0minfo[0m] [0m:: delivering :: it.gov.***REMOVED***#***REMOVED***-catalog-manager-client_2.11;1.0.4-SNAPSHOT :: 1.0.4-SNAPSHOT :: integration :: Tue Aug 14 17:34:02 CEST 2018[0m
+[0m[[0mdebug[0m] [0m	options = status=integration pubdate=Tue Aug 14 17:34:02 CEST 2018 validate=true resolveDynamicRevisions=true merge=true resolveId=null pubBranch=null[0m
+[0m[[0minfo[0m] [0m	delivering ivy file to /home/cmonti/***REMOVED***/catalog_manager/client/target/scala-2.11/ivy-1.0.4-SNAPSHOT.xml[0m
+[0m[[0mdebug[0m] [0m	deliver done (23ms)[0m

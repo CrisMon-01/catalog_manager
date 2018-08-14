@@ -1,0 +1,4 @@
+eval System.setProperty("STAGING", "true")
+reload
+compile
+docker:publish

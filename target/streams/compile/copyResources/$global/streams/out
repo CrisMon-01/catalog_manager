@@ -1,0 +1,15 @@
+[0m[[0mdebug[0m] [0mCopy resource mappings: [0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/application.conf,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/catalog_manager.yaml,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/catalog_manager.yaml)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/cross_spec,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/cross_spec)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/logback.xml,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/logback.xml)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/mnt,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/mnt)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/prod,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/prod)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/production.conf,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/production.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/routes,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/test,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/test)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/cross_spec/bk_catalog_manager.yaml,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/cross_spec/bk_catalog_manager.yaml)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/cross_spec/ckan.yaml,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/cross_spec/ckan.yaml)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/mnt/emptyfile,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/mnt/emptyfile)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/prod/prodBase.conf,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/prod/prodBase.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/cmonti/***REMOVED***/catalog_manager/conf/test/prodBase.conf,/home/cmonti/***REMOVED***/catalog_manager/target/scala-2.11/classes/test/prodBase.conf)[0m

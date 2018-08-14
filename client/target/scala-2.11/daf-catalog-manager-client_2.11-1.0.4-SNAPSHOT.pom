@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="***REMOVED***://maven.apache.org/POM/4.0.0 ***REMOVED***://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="***REMOVED***://www.w3.org/2001/XMLSchema-instance" xmlns="***REMOVED***://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>it.gov.***REMOVED***</groupId>
+    <artifactId>***REMOVED***-catalog-manager-client_2.11</artifactId>
+    <packaging>jar</packaging>
+    <description>***REMOVED***-catalog-manager-client</description>
+    <version>1.0.4-SNAPSHOT</version>
+    <name>***REMOVED***-catalog-manager-client</name>
+    <organization>
+        <name>it.gov.***REMOVED***</name>
+    </organization>
+    <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>2.11.8</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-json_2.11</artifactId>
+            <version>2.5.14</version>
+        </dependency>
+        <dependency>
+            <groupId>com.typesafe.play</groupId>
+            <artifactId>play-ws_2.11</artifactId>
+            <version>2.5.14</version>
+        </dependency>
+    </dependencies>
+    <repositories>
+        <repository>
+            <id>sonatypereleases</id>
+            <name>sonatype-releases</name>
+            <url>***REMOVED***://oss.sonatype.org/content/repositories/releases/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+</project>

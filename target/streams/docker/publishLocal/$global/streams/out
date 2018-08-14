@@ -1,0 +1,39 @@
+[0m[[0mdebug[0m] [0mExecuting Native docker build --force-rm -t nexus.***REMOVED***.test/***REMOVED***-catalog-manager:1.0.4-SNAPSHOT .[0m
+[0m[[0mdebug[0m] [0mWorking directory /home/cmonti/***REMOVED***/catalog_manager/target/docker/stage[0m
+[0m[[0minfo[0m] [0mSending build context to Docker daemon 107.9 MB[0m
+[0m[[0minfo[0m] [0mStep 1/10 : FROM anapsix/alpine-java:8_jdk_unlimited[0m
+[0m[[0minfo[0m] [0m ---> 0b0b8cdd4c95[0m
+[0m[[0minfo[0m] [0mStep 2/10 : RUN apk update && apk add bash krb5-libs krb5[0m
+[0m[[0minfo[0m] [0m ---> Using cache[0m
+[0m[[0minfo[0m] [0m ---> 6804a1819fa5[0m
+[0m[[0minfo[0m] [0mStep 3/10 : RUN ln -sf /etc/krb5.conf /opt/jdk/jre/lib/security/krb5.conf[0m
+[0m[[0minfo[0m] [0m ---> Using cache[0m
+[0m[[0minfo[0m] [0m ---> 535c03c7ad32[0m
+[0m[[0minfo[0m] [0mStep 4/10 : WORKDIR /opt/docker[0m
+[0m[[0minfo[0m] [0m ---> Using cache[0m
+[0m[[0minfo[0m] [0m ---> b9050781d020[0m
+[0m[[0minfo[0m] [0mStep 5/10 : ADD opt /opt[0m
+[0m[[0minfo[0m] [0m ---> fd2c1af3ca52[0m
+[0m[[0minfo[0m] [0mRemoving intermediate container c283cb9adb51[0m
+[0m[[0minfo[0m] [0mStep 6/10 : RUN chown -R daemon:daemon .[0m
+[0m[[0minfo[0m] [0m ---> Running in 331b9b63a401[0m
+[0m[[0minfo[0m] [0m[91m[0m ---> 9e63fffb580e[0m
+[0m[[0minfo[0m] [0mRemoving intermediate container 331b9b63a401[0m
+[0m[[0minfo[0m] [0mStep 7/10 : EXPOSE 9000[0m
+[0m[[0minfo[0m] [0m ---> Running in 19a8dd0d79ec[0m
+[0m[[0minfo[0m] [0m ---> c80fb1d8d0e1[0m
+[0m[[0minfo[0m] [0mRemoving intermediate container 19a8dd0d79ec[0m
+[0m[[0minfo[0m] [0mStep 8/10 : USER daemon[0m
+[0m[[0minfo[0m] [0m ---> Running in 3f4407451d1d[0m
+[0m[[0minfo[0m] [0m ---> b464df10e537[0m
+[0m[[0minfo[0m] [0mRemoving intermediate container 3f4407451d1d[0m
+[0m[[0minfo[0m] [0mStep 9/10 : ENTRYPOINT bin/***REMOVED***-catalog-manager -Dconfig.file=conf/production.conf[0m
+[0m[[0minfo[0m] [0m ---> Running in 85331536562b[0m
+[0m[[0minfo[0m] [0m ---> de842130adad[0m
+[0m[[0minfo[0m] [0mRemoving intermediate container 85331536562b[0m
+[0m[[0minfo[0m] [0mStep 10/10 : CMD [0m
+[0m[[0minfo[0m] [0m ---> Running in 4943920be951[0m
+[0m[[0minfo[0m] [0m ---> 870429048176[0m
+[0m[[0minfo[0m] [0mRemoving intermediate container 4943920be951[0m
+[0m[[0minfo[0m] [0mSuccessfully built 870429048176[0m
+[0m[[0minfo[0m] [0mBuilt image DockerAlias(Some(nexus.***REMOVED***.test),None,***REMOVED***-catalog-manager,Some(1.0.4-SNAPSHOT))[0m

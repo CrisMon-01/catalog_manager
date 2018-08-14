@@ -1,0 +1,38 @@
+{
+  "dct_identifier": "ABC1234",
+  "dct_title": {
+    "value": "GTFS Agency"
+  },
+  "dct_description": {
+    "value": "One or more transit agencies that provide the data in this feed"
+  },
+  "dcat_theme": {
+    "id": "***REMOVED***://publications.europa.eu/resource/authority/data-theme/TRAN",
+    "value": "Trasporti"
+  },
+  "dct_rightsHolder": {
+    "id": "***REMOVED***://www.comune.torino.it/",
+    "value": "Torino"
+  },
+  "dct_accrualPeriodicity":{
+    "id": "***REMOVED***://publications.europa.eu/resource/authority/frequency/BIMONTHLY",
+    "value": "bimonthly"
+  },
+  "dct_subject":
+  [
+    {
+      "id": "***REMOVED***://eurovoc.europa.eu/4512",
+      "value": "public transport"
+    }
+  ],
+  "dct_language": {
+    "id": "***REMOVED***://publications.europa.eu/resource/authority/language/ITA",
+    "value": "ITA"
+  },
+
+  "dcat_keyword":
+  [
+    "gtfs", "public transportation", "agency", "trasporto pubblico", "aziende trasporto"
+  ],
+  "dcat_spatial": "***REMOVED***://www.geonames.org/3165524"
+}
