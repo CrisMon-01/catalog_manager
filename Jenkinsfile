@@ -15,7 +15,7 @@ pipeline{
         stage('Staging'){
             steps{
             script{
-                if(***REMOVED***.BRANCH_NAME=='test'){
+                if(***REMOVED***.BRANCH_NAME=='testci'){
                     sh '''
                     cd kubernetes
                     ./config-map-test.sh
