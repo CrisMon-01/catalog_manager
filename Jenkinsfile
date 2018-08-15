@@ -6,8 +6,7 @@ pipeline{
              script{
              if(***REMOVED***.BRANCH_NAME=='testci'){
                 sh '''
-                sbt " -DSTAGING=true; reload; clean; compile;  docker:publish"
-		ls                
+                sbt " -DSTAGING=true; reload; clean; compile;  docker:publish"               
 '''
                 }
             }
@@ -20,7 +19,7 @@ pipeline{
                     sh '''
 		    
                     cd kubernetes
-                    ./config-map-test.sh
+                    sh config-map-test.sh
                     kubectl delete -f  ***REMOVED***_datipubblici_test.yaml
                     kubectl create -f  ***REMOVED***_datipubblici_test.yaml --namespace=security-enhancements
                     '''
