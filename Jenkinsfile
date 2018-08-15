@@ -15,9 +15,8 @@ pipeline{
         stage('Staging'){
             steps{
             script{
-                if(***REMOVED***.BRANCH_NAME=='test'){
+                if(***REMOVED***.BRANCH_NAME=='testci'){
                     sh '''
-		    
                     cd kubernetes
                     sh config-map-test.sh
                     kubectl delete -f  ***REMOVED***_datipubblici_test.yaml
