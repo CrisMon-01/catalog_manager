@@ -19,7 +19,8 @@ pipeline{
                     sh '''
                     cd kubernetes
                     sh config-map-test.sh
-                    kubectl create -f  ***REMOVED***_catalog_manager_test.yml --namespace=security-enhancements
+                    kubectl delete -f  ***REMOVED***_catalog_manager_test.yml
+                    kubectl create -f  ***REMOVED***_catalog_manager_test.yml 
                     '''
             }
             }
