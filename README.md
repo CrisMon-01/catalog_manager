@@ -1,0 +1,1 @@
+[Build Status](***REMOVED***://131.1.252.41/job/CI-Catalog_Manager/job/testci/badge/icon)
