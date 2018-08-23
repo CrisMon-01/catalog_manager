@@ -20,7 +20,7 @@ pipeline{
                     sh '''
                     cd kubernetes
                     sh config-map-test.sh
-                    kubectl --kubeconfig=../../../.kube/config.***REMOVED***-***REMOVED*** apply -f  ***REMOVED***_catalog_manager_test.yml 
+                    kubectl --kubeconfig=../../../.kube/config.***REMOVED***-***REMOVED*** apply -f  ***REMOVED***_catalog_manager_test.yml --force  --namespace?testci
                     '''
                     slackSend (color: '#00FF00', message: "SUCCESSFUL: Job '${***REMOVED***.JOB_NAME} [${***REMOVED***.BUILD_NUMBER}]' ***REMOVED***://***REMOVED******REMOVED***.***REMOVED***.it/blue/organizations/jenkins/CI-Catalog_Manager/activity")
             }
